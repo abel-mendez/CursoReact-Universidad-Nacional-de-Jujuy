@@ -1,0 +1,48 @@
+{
+    "Characters": [
+        {   
+            "name": "Nezuko",
+            "lastname": "Kamado",
+            "age": 14,
+            "photo": "../assets/nezuko.png",
+            "height":153,
+            "weight": 45
+        },
+        {   
+            "name": "Tanjiro",
+            "lastname": "Kamado",
+            "age": 15,
+            "photo": "../assets/tanjiro.jpg",
+            "height":165,
+            "weight": 61
+        },{   
+            "name": "Shinobu",
+            "lastname": "Kocho",
+            "age": 18,
+            "photo": "../assets/shinobu.jpg",
+            "height":151,
+            "weight": 37
+        },{   
+            "name": "Kanao",
+            "lastname": "Tsuyuri",
+            "age": 16,
+            "photo": "../assets/kanao.jpg",
+            "height":156,
+            "weight": 46
+        },{   
+            "name": "Zen'itsu",
+            "lastname": "Agatsuma",
+            "age": 16,
+            "photo": "../assets/zenitsu.jpg",
+            "height":164,
+            "weight": 58
+        },{   
+            "name": "Shinjuro",
+            "lastname": "Rengoku",
+            "age": 20,
+            "photo": "../assets/rengoku.jpg",
+            "height":177,
+            "weight": 72
+        }
+    ]
+}
