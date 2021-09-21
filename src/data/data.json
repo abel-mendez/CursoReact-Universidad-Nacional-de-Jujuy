@@ -1,6 +1,6 @@
 {
     "Characters": [
-        {   
+        {   "id":"0",
             "name": "Nezuko",
             "lastname": "Kamado",
             "age": 14,
@@ -8,35 +8,35 @@
             "height":153,
             "weight": 45
         },
-        {   
+        {   "id":"1",
             "name": "Tanjiro",
             "lastname": "Kamado",
             "age": 15,
             "photo": "https://i.pinimg.com/originals/1a/73/8f/1a738f613db6cf25206e08510e9daddf.jpg",
             "height":165,
             "weight": 61
-        },{   
+        },{   "id":"2",
             "name": "Shinobu",
             "lastname": "Kocho",
             "age": 18,
             "photo": "https://besthqwallpapers.com/Uploads/20-2-2020/122360/thumb2-shinobu-kochou-artwork-kimetsu-no-yaiba-demon-hunter-manga.jpg",
             "height":151,
             "weight": 37
-        },{   
+        },{   "id":"3",
             "name": "Kanao",
             "lastname": "Tsuyuri",
             "age": 16,
             "photo": "https://images.alphacoders.com/114/1143273.jpg",
             "height":156,
             "weight": 46
-        },{   
+        },{   "id":"4",
             "name": "Zen'itsu",
             "lastname": "Agatsuma",
             "age": 16,
             "photo": "https://images2.alphacoders.com/100/thumb-1920-1007550.jpg",
             "height":164,
             "weight": 58
-        },{   
+        },{   "id":"5",
             "name": "Shinjuro",
             "lastname": "Rengoku",
             "age": 20,
