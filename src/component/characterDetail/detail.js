@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data/data.json";
+import "./detail.css";
 export default class Detail extends React.Component {
   constructor() {
     super();
@@ -18,7 +19,7 @@ export default class Detail extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="container">
         <select
           onChange={(event) => {
             this.onChangeInput(event);
@@ -30,7 +31,7 @@ export default class Detail extends React.Component {
             </option>
           ))}
         </select>
-        <div>
+        <div className="container">
           <h3>
             {this.state.currentElement.name +
               " " +
@@ -39,9 +40,10 @@ export default class Detail extends React.Component {
           <div>
             <img src={this.state.currentElement.photo}></img>
           </div>
-          <div> Edad: {this.state.currentElement.age + " años"}</div>
-          <div> Altura: {this.state.currentElement.height + " cm"}</div>
-          <div>Peso: {this.state.currentElement.weight + " kg"}</div>
+          <h3> Character Details</h3>
+          <p> Edad: {this.state.currentElement.age + " años"}</p>
+          <p> Altura: {this.state.currentElement.height + " cm"}</p>
+          <p>Peso: {this.state.currentElement.weight + " kg"}</p>
         </div>
       </div>
     );

@@ -11,6 +11,11 @@
 .card img {
   max-width: 100%;
   object-fit: cover;
+  transition: 500ms;
+}
+.card img:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: 500ms;
 }
 .card div {
   overflow: hidden;
