@@ -19,7 +19,10 @@
   align-content: center;
   list-style: none;
 }
-.ul a {
+.link {
   text-decoration: none;
   color: white;
+}
+.link {
+  color: inherit;
 }

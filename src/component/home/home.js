@@ -1,17 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Card from "../util/card/card";
-import data from "../../data/data.json";
 import "./home.css";
 export default class Home extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      characters: props.characters,
+    };
+  }
   render() {
     return (
       <div className="home">
-        {data.Characters.map((element) => (
-          <Card
-            name={element.name + " " + element.lastname}
-            url={element.photo}
-          />
-        ))}
+        {this.state.characters.map((element) => {
+          return (
+            <NavLink
+              exact
+              key={element.id}
+              to={`/characterDetail/${element.id}`}
+            >
+              <Card
+                name={element.name + " " + element.lastname}
+                url={element.photo}
+              />
+            </NavLink>
+          );
+        })}
       </div>
     );
   }

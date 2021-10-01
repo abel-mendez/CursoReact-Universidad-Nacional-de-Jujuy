@@ -43,6 +43,42 @@
             "photo": "https://images8.alphacoders.com/115/thumb-1920-1150496.jpg",
             "height":177,
             "weight": 72
+        },{   "id":"6",
+            "name": "Inosuke",
+            "lastname": "Hashibira",
+            "age": 15,
+            "photo": "http://pm1.narvii.com/7334/f3ae8846c6b4419fccaf6790529bf874c42c35d7r1-720-1280v2_uhq.jpg",
+            "height":164,
+            "weight": 63
+        },
+        {   "id":"7",
+            "name": "Mitsuri",
+            "lastname": "Kanroji",
+            "age": 19,
+            "photo": "https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/J5X6QG7JFVFJ5I4N2HZ2VUTGP4.png",
+            "height":167,
+            "weight": 56
+        },{   "id":"8",
+            "name": "Muzan",
+            "lastname": "Kibutsuji",
+            "age": ">1000",
+            "photo": "https://laverdadnoticias.com/__export/1621540008674/sites/laverdad/img/2021/05/20/muzan_kibutsuji_demon_slayer_historia.jpg_2065693783.jpg",
+            "height":179,
+            "weight": 75
+        },{   "id":"9",
+            "name": "Giyū",
+            "lastname": "Tomioka",
+            "age": 19,
+            "photo": "https://i.pinimg.com/originals/5b/6f/1a/5b6f1adc1dce3771194190e84ac454e4.jpg",
+            "height":176,
+            "weight": 69
+        },{   "id":"10",
+            "name": "Kagaya",
+            "lastname": "Ubuyashiki ",
+            "age": 23,
+            "photo": "https://i.pinimg.com/originals/31/28/bd/3128bd7a38d8cfca96390299766a9f40.jpg",
+            "height":179,
+            "weight": "-"
         }
     ]
 }
