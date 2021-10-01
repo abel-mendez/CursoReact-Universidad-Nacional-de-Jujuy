@@ -1,9 +1,9 @@
 import { useHistory, useParams } from "react-router";
-import { NavLink } from "react-router-dom";
 import Card from "../util/card/card";
+import data from "../../data/data.json";
 export default function Character(props) {
   const params = useParams();
-  const element = props.characters.find((element) => element.id === params.id);
+  const element = data.Characters.find((element) => element.id === params.id);
   const history = useHistory();
   const volver = () => {
     history.push("/");

@@ -1,13 +1,14 @@
 import React from "react";
 import "./detail.css";
+import data from "../../data/data.json";
 import { useState, useEffect } from "react";
 export default function Detail(props) {
-  const [selected, setSelected] = useState(props.characters[0]);
+  const [selected, setSelected] = useState(data.Characters[0]);
   const [characters, setCharacters] = useState([]);
   useEffect(() => {
-    setCharacters(props.characters);
-    setSelected(props.characters[0]);
-  }, [props.characters, characters]);
+    setCharacters(data.Characters);
+    setSelected(data.Characters[0]);
+  }, [data.Characters, characters]);
 
   const onChangeInput = (event) => {
     setSelected(

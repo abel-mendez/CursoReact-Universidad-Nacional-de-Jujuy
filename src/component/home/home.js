@@ -2,11 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Card from "../util/card/card";
 import "./home.css";
+import data from "../../data/data.json";
 export default class Home extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      characters: props.characters,
+      characters: data.Characters,
     };
   }
   render() {
