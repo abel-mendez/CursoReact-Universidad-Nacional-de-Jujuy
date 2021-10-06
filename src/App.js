@@ -26,11 +26,13 @@ function App() {
         <Route path="/characterDetail/:id">
           <Character characters={charactersInfo}></Character>
         </Route>
+        <Route path="/about">
+          <About />
+        </Route>
         <Route path="*">
           <h4>Ruta no encontrada</h4>
         </Route>
       </Switch>
-      <About id="about" />
     </>
   );
 }

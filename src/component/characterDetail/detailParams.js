@@ -9,12 +9,13 @@ export default function Character(props) {
     history.push("/");
   };
   return (
-    <>
+    <div className="containerDetail">
       <Card
         name={element.name + " " + element.lastname}
         url={element.photo}
       ></Card>
       <button
+        className="button"
         type="button"
         onClick={() => {
           volver();
@@ -22,6 +23,6 @@ export default function Character(props) {
       >
         Volver Al Home
       </button>
-    </>
+    </div>
   );
 }
