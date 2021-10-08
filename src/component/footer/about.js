@@ -12,39 +12,21 @@ const validar = (event, error) => {
   let value = event.target.value;
   let name = event.target.name;
   if (value === "") {
-    error = {
-      ...error,
-      [name]: "Este campo no puede estar vacio",
-    };
+    error[name] = "Este campo no puede estar vacio";
   } else if (name === "email" && !/\S+@\S+\.\S+/.test(value)) {
-    error = {
-      ...error,
-      [name]: "Debe ingresar un mail valido",
-    };
+    error[name] = "Debe ingresar un mail valido";
   } else if (name === "asunto" && value.length < 10) {
-    error = {
-      ...error,
-      [name]: "Debe ingresar al menos 10 caracteres",
-    };
+    error[name] = "Debe ingresar al menos 10 caracteres";
   } else if (name === "consulta" && value.length > 256) {
-    error = {
-      ...error,
-      [name]: "Debe ingresar menos de 256 caracteres",
-    };
+    error[name] = "Debe ingresar menos de 256 caracteres";
   } else {
-    error = {
-      ...error,
-      [name]: "",
-    };
+    error[name] = "";
   }
   let errores = true;
   if (error.email === "" && error.asunto === "" && error.consulta === "") {
     errores = false;
   }
-  error = {
-    ...error,
-    err: errores,
-  };
+  error.err = errores;
   return error;
 };
 export default function About() {
@@ -87,7 +69,7 @@ export default function About() {
             name="email"
             className="input"
           />
-          {errors.email}
+          <p className="error">{errors.email}</p>
         </div>
         <div>
           <label for="asunto"> Asunto: </label>
@@ -98,7 +80,7 @@ export default function About() {
             name="asunto"
             className="input"
           />
-          {errors.asunto}
+          <p className="error">{errors.asunto}</p>
         </div>
         <label id="consulta">Tu consulta</label>
         <textarea
@@ -109,11 +91,14 @@ export default function About() {
           rows="10"
           cols="50"
         ></textarea>
-        {errors.consulta}
-        <button className="button" disabled={errors.err || form.vacio}>
+        <p className="error">{errors.consulta}</p>
+        <button
+          type="button"
+          className="button"
+          disabled={errors.err || form.vacio}
+        >
           Enviar
         </button>
-        {console.log(errors)}
       </form>
     </div>
   );

@@ -56,5 +56,6 @@
   color: rgb(48, 41, 41);
 }
 .button[disabled] {
-  background-color: red;
+  background-color: rgb(160, 57, 57);
+  box-shadow: none;
 }
